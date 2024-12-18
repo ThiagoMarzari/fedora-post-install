@@ -12,12 +12,15 @@ sudo dnf install https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-releas
 sudo dnf group upgrade core
 ```
 
-## Instalar drivers da nvidia
+## Firmware
 ```
-sudo dnf update
-sudo dnf install akmod-nvidia
-sudo dnf install xorg-x11-drv-nvidia-cuda
+sudo fwupdmgr refresh --force
+sudo fwupdmgr get-devices # Lists devices with available updates.
+sudo fwupdmgr get-updates # Fetches list of available updates.
+sudo fwupdmgr update
+
 ```
+
 
 ## Codecs 
 ````
@@ -26,6 +29,14 @@ sudo dnf4 group upgrade multimedia
 sudo dnf update @multimedia --setopt="install_weak_deps=False" --exclude=PackageKit-gstreamer-plugin # Installs gstreamer components. Required if you use Gnome Videos and other dependent applications.
 sudo dnf update @sound-and-video # Installs useful Sound and Video complement packages.
 ````
+
+## Instalar drivers da nvidia
+```
+sudo dnf update
+sudo dnf install akmod-nvidia
+sudo dnf install xorg-x11-drv-nvidia-cuda
+
+```
 
 
 ## Instalar programas para jogos
