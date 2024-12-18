@@ -45,6 +45,11 @@ sudo dnf install steam -y
 flatpak install flathub com.heroicgameslauncher.hgl
 ```
 
+## Desenvolvimento
+```
+sudo dnf install nodejs -y
+```
+
 
 ## Instalar aplicativos gerais
 ```
