@@ -6,8 +6,11 @@
 - Reiniciar pc
 
 ## Instalar o RPM Fusion
-- `sudo dnf install https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm`
-- `sudo dnf group upgrade core`
+```
+sudo dnf install https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
+
+sudo dnf group upgrade core
+```
 
 ## Instalar drivers da nvidia
 ```
@@ -26,14 +29,19 @@ sudo dnf update @sound-and-video # Installs useful Sound and Video complement pa
 
 
 ## Instalar programas para jogos
-- sudo dnf install steam -y
-- flatpak install flathub com.heroicgameslauncher.hgl
+```
+sudo dnf install steam -y
+flatpak install flathub com.heroicgameslauncher.hgl
+```
+
 
 ## Instalar aplicativos gerais
-
-- flatpak install flathub com.spotify.Client
-- flatpak install flathub org.gnome.Boxes
-- flatpak install flathub com.obsproject.Studio
-- flatpak install flathub com.todoist.Todoist
-- flatpak install flathub com.rtosta.zapzap
+```
+flatpak install flathub com.spotify.Client
+flatpak install flathub org.gnome.Boxes
+flatpak install flathub com.obsproject.Studio
+flatpak install flathub com.rtosta.zapzap
+flatpak install flathub com.todoist.Todoist
+flatpak install flathub dev.vencord.Vesktop
+```
 
